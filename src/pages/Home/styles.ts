@@ -1,30 +1,76 @@
 import styled from 'styled-components';
 
+export const Header = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,900&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+
+  span {
+    font-size: 5.5rem;
+    color: white;
+    transform: skewY(-5deg);
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+  }
+
+  h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 5.5rem;
+    color: white;
+    transform: skewY(-5deg);
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+  }
+
+  h1::before {
+    content: '';
+    display: block;
+    height: 65%;
+    width: 43%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    background: linear-gradient(to bottom, #9be15d, #00e3ae);
+    opacity: 0.8;
+    z-index: -1;
+    transform: skewY(370deg) translate(-50%, -50%);
+  }
+
+  .container {
+    width: 95rem;
+    margin: 0 auto 0 auto;
+    margin-top: 3rem;
+  }
+`;
+
+
 export const ProductList = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,900&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
 
   .cards-container {
-    width: 100rem;
+    width: 90rem;
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 
   .card {
     background: white;
     box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     transform: skewX(-20deg);
     display: flex;
     transition: all 0.5s;
   }
 
   .card__emoji {
-    font-size: 5.5rem;
-    line-height: 1.2;
-    padding: 1.5rem 6rem 0.5rem 1.5rem;
+    font-size: 5.0rem;
+    line-height: 0.4;
+    padding: 2.9rem 6rem 0.1rem 1.5rem;
     letter-spacing: -4rem;
     transform: skewX(20deg);
+
   }
 
   .card__title-box {
@@ -38,7 +84,7 @@ export const ProductList = styled.div`
   .card__title {
     font-family: 'Megrim', sans-serif;
     color: white;
-    font-size: 3.25rem;
+    font-size: 2.60rem;
     transform: skewX(20deg);
   }
 
@@ -58,14 +104,14 @@ export const ProductList = styled.div`
   }
 
   .card__detail {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.8rem;
     transform: skewX(20deg);
     padding: 1.75rem;
   }
 
   .card__detail--organic {
-    font-weight: 900;
+    font-weight: 550;
     text-transform: uppercase;
     font-size: 1.9rem;
     background-image: linear-gradient(to right, #9be15d, #00e3ae);
@@ -75,8 +121,8 @@ export const ProductList = styled.div`
   }
 
   .card__detail--price {
-    font-weight: 900;
-    font-size: 1.9rem;
+    font-weight: 550;
+    font-size: 1.6rem;
   }
 
   .card__link:link,
@@ -85,7 +131,7 @@ export const ProductList = styled.div`
     background-color: #79e17b;
     color: white;
     font-size: 1.6rem;
-    font-weight: 900;
+    font-weight: 550;
     text-transform: uppercase;
     text-decoration: none;
     padding: 2.5rem;

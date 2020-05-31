@@ -10,16 +10,16 @@ export default createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
+    font-size: 49.5%;
     box-sizing: border-box;
   }
 
   body {
-    padding: 5rem 5rem 10rem;
+    padding: 1rem 3rem 10rem;
     line-height: 1.7;
     font-family: 'Nunito Sans', sans-serif;
     color: #555;
-    min-height: 100vh;
+    min-height: 30vh;
     background: linear-gradient(to bottom right, #9be15d, #00e3ae);
     -webkit-font-smoothing: antialiased;
   }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link, useRouteMatch } from 'react-router-dom';
 
-import { ProductDetail } from './styles';
+import { Header, ProductDetail } from './styles';
 
 interface AttributyParams {
   _id: string;
@@ -36,6 +36,20 @@ const Product: React.FC = () => {
 
   return (
     <>
+      <Header>
+        <div className="container">
+          <h1>
+            <span role="img" aria-label="emoji-right">
+              🌽
+            </span>
+            Node Farm
+            <span role="img" aria-label="emoji-right">
+              🥦
+            </span>
+          </h1>
+        </div>
+      </Header>
+
       {attributes && (
         <ProductDetail>
           <div className="container" >

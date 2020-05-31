@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 
-import { ProductList } from './styles';
+import { Header, ProductList } from './styles';
 
 interface Producty {
   _id: number,
@@ -29,6 +29,20 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Header>
+        <div className="container">
+          <h1>
+            <span role="img" aria-label="emoji-right">
+              🌽
+            </span>
+            Node Farm
+            <span role="img" aria-label="emoji-right">
+              🥦
+            </span>
+          </h1>
+        </div>
+      </Header>
+
       <ProductList>
         {products.map(product => (
           <div className="cards-container" key={product._id}>
