@@ -4,7 +4,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 
 import { ProductDetail } from './styles';
 
-interface RepositoryParams {
+interface AttributyParams {
   _id: string;
 }
 
@@ -23,9 +23,7 @@ const Product: React.FC = () => {
   //const [attributes, setAttributes] = useState<Attributy[]>([]);
   const [attributes, setAttributes] = useState<Attributy | null>(null);
 
-  const { params } = useRouteMatch<RepositoryParams>();
-
-  console.log(params._id)
+  const { params } = useRouteMatch<AttributyParams>();
 
   useEffect(() => {
 
