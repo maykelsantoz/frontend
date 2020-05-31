@@ -25,6 +25,8 @@ const Product: React.FC = () => {
 
   const { params } = useRouteMatch<RepositoryParams>();
 
+  console.log(params._id)
+
   useEffect(() => {
 
     api.get(`products/${params._id}`).then(response => {
