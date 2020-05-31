@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 
-import { ProductList } from './styles';
+//import { ProductList } from './styles';
+import { ProductList } from '../../components/Homes/styles';
 
 interface Producty {
   _id: number,
