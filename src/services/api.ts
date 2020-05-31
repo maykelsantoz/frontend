@@ -2,7 +2,7 @@ import axios from 'axios';
 require("dotenv").config();
 
 const api = axios.create({
-  baseURL: 'https://nodefarm-backend.herokuapp.com/'
+  baseURL: `${process.env.API_URL}`
 });
 
 export default api;

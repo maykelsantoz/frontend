@@ -20,8 +20,8 @@ $ git clone https://github.com/maykelsantoz/frontend.git
 ### Iniciando o Projeto
 
 ```bash
-# Vá para o repositório Back-end
-$ cd backend
+# Vá para o repositório front-end
+$ cd frontend
 
 # Instale as dependencias
 $ yarn
