@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link, useRouteMatch } from 'react-router-dom';
 
-import { ProductDetail } from '../../components/Product/styles';
+import { ProductDetail } from './styles';
 
 interface RepositoryParams {
   _id: string;
