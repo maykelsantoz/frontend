@@ -19,17 +19,6 @@ interface Producty {
 const Home: React.FC = () => {
 
   const [products, setProducts] = useState<Producty[]>([]);
-  // const [products, setProducts] = useState<Producty[]>(() => {
-  //   const storagedProducts = localStorage.getItem(
-  //     '@NodeFarm:products',
-  //   );
-
-  //   if (storagedProducts) {
-  //     return JSON.parse(storagedProducts);
-  //   }
-  //   return [];
-  // });
-
 
   useEffect(() => {
     api.get(`/products/`).then(response => {
