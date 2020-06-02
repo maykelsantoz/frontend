@@ -53,6 +53,7 @@ export const ProductList = styled.div`
     width: 90rem;
     margin: 0 auto;
     margin-top: 6rem;
+
   }
 
   .card {

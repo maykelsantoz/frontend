@@ -58,6 +58,12 @@ export const ProductDetail = styled.div`
     position: relative;
   }
 
+  .container {
+    width: 95rem;
+    margin: 0 auto 0 auto;
+    margin-top: 3rem;
+  }
+
   .product__organic {
     position: absolute;
     top: -4rem;

@@ -7,11 +7,13 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
   }
 
   html {
     font-size: 49.5%;
     box-sizing: border-box;
+    height: 100%;
   }
 
   body {
@@ -22,5 +24,7 @@ export default createGlobalStyle`
     min-height: 30vh;
     background: linear-gradient(to bottom right, #9be15d, #00e3ae);
     -webkit-font-smoothing: antialiased;
-  }
-`;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}`;
