@@ -53,6 +53,15 @@ export const Header = styled.div`
     justify-content: center;
   }
 
+  span {
+    font-size: 5.5rem;
+    color: white;
+    transform: skewY(-5deg);
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+  }
+
   h1 {
     font-family: 'Megrim', sans-serif;
     font-size: 5.5rem;
@@ -69,7 +78,7 @@ export const Header = styled.div`
       content: '';
       display: block;
       height: 65%;
-      width: 100%;
+      width: 90%;
       position: absolute;
       top: 105%;
       left: 50%;
