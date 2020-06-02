@@ -42,6 +42,43 @@ export const Header = styled.div`
     margin: 0 auto 0 auto;
     margin-top: 3rem;
   }
+
+  @media only screen and (max-width: 400px) {
+
+  .container {
+    text-align: center;
+    align-items: center;
+    width: 50rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 5.5rem;
+    color: white;
+    transform: skewY(-5deg);
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+    width: 45rem;
+
+    }
+
+    h1::before {
+      content: '';
+      display: block;
+      height: 65%;
+      width: 100%;
+      position: absolute;
+      top: 105%;
+      left: 50%;
+      background: linear-gradient(to bottom, #9be15d, #00e3ae);
+      opacity: 0.8;
+      z-index: -1;
+      transform: skewY(370deg) translate(-50%, -50%);
+    }
+  }
 `;
 
 
@@ -167,4 +204,31 @@ export const ProductList = styled.div`
     margin-left: 1rem;
     margin-top: -0.8rem;
   }
+
+    @media only screen and (max-width: 400px) {
+
+      html {
+        font-size: 19.5%;
+        box-sizing: border-box;
+        width: 20%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      html {
+        font-size: 19.5%;
+        box-sizing: border-box;
+        width: 10%;
+      }
+    }
+
+    @media only screen and (max-width: 845px) {
+
+      html {
+        font-size: 19.5%;
+        box-sizing: border-box;
+        width: 10%;
+      }
+    }
 `;
