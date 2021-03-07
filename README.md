@@ -6,6 +6,10 @@
 
 - Aplicação web desenvolvida para consumir uma api em NODE com banco de dados em MONGO, será renderizada em tela, onde os dados contidos no banco possam ser vistos em tempo real.
 
+## 📋 Projeto no Ar
+
+- Aplicação no ar com deploy no Heroku. [Nodefarm React](http://nodefarm-frontend.herokuapp.com/)
+
 ## 💻 Como usar
 
 Para clonar e rodar essa aplicação você precisará do [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/), [yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/) instalado no seu computador, para baixar e usar todas as dependencies e devDepencdencies use o comando [yarn](https://yarnpkg.com/) ou [npm install](https://www.npmjs.com/).
